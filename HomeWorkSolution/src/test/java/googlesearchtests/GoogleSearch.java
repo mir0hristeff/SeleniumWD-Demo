@@ -53,6 +53,6 @@ public class GoogleSearch extends BaseTest {
         WebElement firstResult = resultsList.get(0);
         var actualResult = firstResult.getText();
 
-        Assertions.assertEquals(actualResult, "IT Career Start in 6 Months - Telerik Academy Alpha");
+        Assertions.assertEquals("IT Career Start in 6 Months - Telerik Academy Alpha", actualResult);
     }
 }
