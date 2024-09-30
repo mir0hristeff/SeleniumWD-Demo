@@ -9,8 +9,8 @@ public class GoogleCookieConsentPage extends BaseGooglePage{
     //Locators
     private final By acceptCookieBtnLocator = By.id("L2AGLb");
 
-    public GoogleCookieConsentPage(WebDriver driver) {
-        super(driver, "");
+    public GoogleCookieConsentPage() {
+        super( "");
     }
 
     //A method to accept the cookie terms

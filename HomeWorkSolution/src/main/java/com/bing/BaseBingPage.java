@@ -9,8 +9,8 @@ import java.time.Duration;
 public class BaseBingPage extends BasePage {
 
     //A constructor
-    public BaseBingPage(WebDriver driver, String pagePath){
-        super(driver, "https://bing.com", pagePath);
+    public BaseBingPage(String pagePath){
+        super("https://bing.com", pagePath);
 
 
     }

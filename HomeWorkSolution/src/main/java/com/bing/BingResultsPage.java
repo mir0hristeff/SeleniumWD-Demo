@@ -11,8 +11,8 @@ public class BingResultsPage extends BaseBingPage {
 
     private final By resultListLocator = By.xpath("changeME");
 
-    public BingResultsPage(WebDriver driver) {
-        super(driver, "/search");
+    public BingResultsPage() {
+        super("/search");
     }
 
     public List<WebElement> getResults(){

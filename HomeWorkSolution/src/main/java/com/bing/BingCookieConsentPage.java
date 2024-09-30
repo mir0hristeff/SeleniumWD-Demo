@@ -9,8 +9,8 @@ public class BingCookieConsentPage extends BaseBingPage {
     //Locators
     private final By acceptCookieBtnLocator = By.id("changeMe");
 
-    public BingCookieConsentPage(WebDriver driver) {
-        super(driver, "");
+    public BingCookieConsentPage() {
+        super("");
     }
 
     //A method to accept the cookie terms

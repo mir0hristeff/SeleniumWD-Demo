@@ -15,9 +15,9 @@ public abstract class BaseBingTest extends BaseTest {
     public void startUp(){
         super.startUp();
         //Initialization of the PageObject
-        consentPage = new GoogleCookieConsentPage(driver);
-        searchPage = new GoogleSearchPage(driver);
-        resultsPage = new GoogleResultsPage(driver);
+        consentPage = new GoogleCookieConsentPage();
+        searchPage = new GoogleSearchPage();
+        resultsPage = new GoogleResultsPage();
 
         // navigate
         searchPage.navigate();

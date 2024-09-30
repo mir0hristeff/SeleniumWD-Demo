@@ -1,6 +1,7 @@
 package com.google;
 
 import framework.BasePage;
+import framework.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -11,9 +12,9 @@ public class BaseGooglePage extends BasePage {
     protected final WebDriverWait webDriverWait;
 
     //A constructor
-    public BaseGooglePage(WebDriver driver, String pagePath){
-        super(driver, "https://google.com", pagePath);
+    public BaseGooglePage(String pagePath){
+        super("https://google.com", pagePath);
 
-        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        webDriverWait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(20));
     }
 }

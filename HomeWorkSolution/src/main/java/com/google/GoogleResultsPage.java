@@ -11,8 +11,8 @@ public class GoogleResultsPage extends BaseGooglePage{
 
     private final By resultListLocator = By.xpath("//a/h3");
 
-    public GoogleResultsPage(WebDriver driver) {
-        super(driver, "/search");
+    public GoogleResultsPage() {
+        super("/search");
     }
 
     public List<WebElement> getResults(){

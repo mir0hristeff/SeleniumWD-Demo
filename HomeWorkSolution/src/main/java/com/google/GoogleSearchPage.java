@@ -9,8 +9,8 @@ public class GoogleSearchPage extends BaseGooglePage{
 
     private final By searchFieldLocator = By.name("q");
 
-    public GoogleSearchPage(WebDriver driver) {
-        super(driver, "");
+    public GoogleSearchPage() {
+        super("");
     }
 
     public void searchTerm(String term){

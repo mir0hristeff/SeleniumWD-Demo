@@ -13,10 +13,10 @@ public class BasePage {
     private final String pageUrl;
 
     //A constructor
-    public BasePage(WebDriver driver, String baseUrl, String pagePath){
+    public BasePage(String baseUrl, String pagePath){
 
         this.webDriver = WebDriverManager.getDriver();
-        this.webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        this.webDriverWait = new WebDriverWait(this.webDriver, Duration.ofSeconds(20));
         this.baseUrl = baseUrl;
         this.pageUrl = pagePath;
     }

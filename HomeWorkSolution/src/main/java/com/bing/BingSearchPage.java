@@ -9,8 +9,8 @@ public class BingSearchPage extends BaseBingPage {
 
     private final By searchFieldLocator = By.name("changeMe");
 
-    public BingSearchPage(WebDriver driver) {
-        super(driver, "");
+    public BingSearchPage() {
+        super( "");
     }
 
     public void searchTerm(String term){

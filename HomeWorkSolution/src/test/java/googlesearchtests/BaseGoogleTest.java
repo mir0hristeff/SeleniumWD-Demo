@@ -16,9 +16,9 @@ public abstract class BaseGoogleTest extends BaseTest {
         super.startUp();
 
         //Initialization of the PageObject
-        consentPage = new GoogleCookieConsentPage(driver);
-        searchPage = new GoogleSearchPage(driver);
-        resultsPage = new GoogleResultsPage(driver);
+        consentPage = new GoogleCookieConsentPage();
+        searchPage = new GoogleSearchPage();
+        resultsPage = new GoogleResultsPage();
 
         //Make it full screen
         //Go to the BaseURL
