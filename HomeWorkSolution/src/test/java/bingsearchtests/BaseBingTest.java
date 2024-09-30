@@ -1,4 +1,4 @@
-package googlesearchtests;
+package bingsearchtests;
 
 import com.google.GoogleCookieConsentPage;
 import com.google.GoogleResultsPage;
@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public abstract class BaseGoogleTest {
+public abstract class BaseBingTest {
     Logger LOGGER = LogManager.getRootLogger();
     WebDriver driver;
     WebDriverWait wait;
@@ -36,7 +36,7 @@ public abstract class BaseGoogleTest {
 
         //Make it full screen
         driver.manage().window().maximize();
-        //Go to the BaseURL
+        // navigate
         searchPage.navigate();
 
         //Accept Terms
